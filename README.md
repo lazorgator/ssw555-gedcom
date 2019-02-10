@@ -40,7 +40,7 @@ executable defaults to Python 3.
 After cloning, navigate to the project directory.
 
 ```
-python -m venv. venv
+python -m venv .venv
 ```
 
 This creates a virtual environment so you don't install dependencies to your
