@@ -1,0 +1,57 @@
+start: top_stmt*
+
+?top_stmt: indi_stmt
+          | fam_stmt
+          | note_stmt
+
+?stmt: name_stmt
+      | sex_stmt
+      | birt_stmt
+      | deat_stmt
+      | fams_stmt
+      | famc_stmt
+      | marr_stmt
+      | husb_stmt
+      | wife_stmt
+      | chil_stmt
+      | div_stmt
+
+indi_stmt: _level indi_id "INDI" stmt+
+?indi_id: "I" /\d+/
+
+note_stmt: _level "NOTE" /[^\n]+/
+
+name_stmt: _level "NAME" _name
+_name: WORD ("/" WORD)* "/"
+
+sex_stmt: _level "SEX" sex
+?sex: /(M|F)/
+
+birt_stmt: _level "BIRT" date_stmt
+deat_stmt: _level "DEAT" date_stmt
+div_stmt: _level "DIV" date_stmt
+
+fam_stmt: _level fam_id "FAM" stmt+
+famc_stmt: _level "FAMC" fam_id
+fams_stmt: _level "FAMS" fam_id
+?fam_id: "F" /\d+/
+
+marr_stmt: _level "MARR" date_stmt
+husb_stmt: _level "HUSB" indi_id
+wife_stmt: _level "WIFE" indi_id
+chil_stmt: _level "CHIL" indi_id
+
+date_stmt: _level "DATE" _date
+_date: day month year
+?day: /\d{1,2}/
+?year: /\d{4}/
+?month: /(JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)/
+
+_level: /\d+/
+
+_NEWLINE: /\r?\n/
+
+%import common.WORD -> WORD
+%import common.WS -> WS
+
+%ignore WS
