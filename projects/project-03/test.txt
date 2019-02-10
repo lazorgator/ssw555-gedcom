@@ -1,0 +1,198 @@
+--> 0 NOTE ssw555-gedcome
+<-- 0|NOTE|Y|ssw555-gedcome
+--> 0 NOTE Grandparents (Generation 1)
+<-- 0|NOTE|Y|Grandparents (Generation 1)
+--> 0 I11 INDI
+<-- 0|INDI|Y|I11
+--> 1 NAME Leandro /Ritter/
+<-- 1|NAME|Y|Leandro /Ritter/
+--> 1 BIRT
+<-- 1|BIRT|Y|
+--> 2 DATE 23 APR 1945
+<-- 2|DATE|Y|23 APR 1945
+--> 1 DEAT
+<-- 1|DEAT|Y|
+--> 2 DATE 26 MAR 1995
+<-- 2|DATE|Y|26 MAR 1995
+--> 1 SEX M
+<-- 1|SEX|Y|M
+--> 1 FAMS F11
+<-- 1|FAMS|Y|F11
+--> 0 I12 INDI
+<-- 0|INDI|Y|I12
+--> 1 NAME Alyssia /Holcomb/
+<-- 1|NAME|Y|Alyssia /Holcomb/
+--> 1 BIRT
+<-- 1|BIRT|Y|
+--> 2 DATE 24 DEC 1950
+<-- 2|DATE|Y|24 DEC 1950
+--> 1 SEX F
+<-- 1|SEX|Y|F
+--> 1 FAMS F11
+<-- 1|FAMS|Y|F11
+--> 0 NOTE Parents (Generation 2)
+<-- 0|NOTE|Y|Parents (Generation 2)
+--> 0 I21 INDI
+<-- 0|INDI|Y|I21
+--> 1 NAME Anita /Ritter/
+<-- 1|NAME|Y|Anita /Ritter/
+--> 1 BIRT
+<-- 1|BIRT|Y|
+--> 2 DATE 13 MAY 1960
+<-- 2|DATE|Y|13 MAY 1960
+--> 1 SEX F
+<-- 1|SEX|Y|F
+--> 1 FAMC F11
+<-- 1|FAMC|Y|F11
+--> 1 FAMS F21
+<-- 1|FAMS|Y|F21
+--> 1 FAMS F31
+<-- 1|FAMS|Y|F31
+--> 0 I22 INDI
+<-- 0|INDI|Y|I22
+--> 1 NAME Angela /Ritter/
+<-- 1|NAME|Y|Angela /Ritter/
+--> 1 BIRT
+<-- 1|BIRT|Y|
+--> 2 DATE 5 JAN 1962
+<-- 2|DATE|Y|5 JAN 1962
+--> 1 SEX F
+<-- 1|SEX|Y|F
+--> 1 FAMC F11
+<-- 1|FAMC|Y|F11
+--> 0 I23 INDI
+<-- 0|INDI|Y|I23
+--> 1 NAME Odin /Ritter/
+<-- 1|NAME|Y|Odin /Ritter/
+--> 1 BIRT
+<-- 1|BIRT|Y|
+--> 2 DATE 7 FEB 1964
+<-- 2|DATE|Y|7 FEB 1964
+--> 1 SEX M
+<-- 1|SEX|Y|M
+--> 1 FAMC F11
+<-- 1|FAMC|Y|F11
+--> 0 NOTE First husband
+<-- 0|NOTE|Y|First husband
+--> 0 I41 INDI
+<-- 0|INDI|Y|I41
+--> 1 NAME Azra /Velez/
+<-- 1|NAME|Y|Azra /Velez/
+--> 1 BIRT
+<-- 1|BIRT|Y|
+--> 2 DATE 12 JUL 1960
+<-- 2|DATE|Y|12 JUL 1960
+--> 1 DEAT
+<-- 1|DEAT|Y|
+--> 2 DATE 30 OCT 1989
+<-- 2|DATE|Y|30 OCT 1989
+--> 1 SEX M
+<-- 1|SEX|Y|M
+--> 1 FAMS F21
+<-- 1|FAMS|Y|F21
+--> 0 NOTE Second husband
+<-- 0|NOTE|Y|Second husband
+--> 0 I51 INDI
+<-- 0|INDI|Y|I51
+--> 1 NAME Warwick /Greene/
+<-- 1|NAME|Y|Warwick /Greene/
+--> 1 BIRT
+<-- 1|BIRT|Y|
+--> 2 DATE 22 AUG 1963
+<-- 2|DATE|Y|22 AUG 1963
+--> 1 SEX M
+<-- 1|SEX|Y|M
+--> 1 FAMS F31
+<-- 1|FAMS|Y|F31
+--> 0 NOTE Children (Generation 3)
+<-- 0|NOTE|Y|Children (Generation 3)
+--> 0 I31 INDI
+<-- 0|INDI|Y|I31
+--> 1 NAME Garrett /Velez/
+<-- 1|NAME|Y|Garrett /Velez/
+--> 1 BIRT
+<-- 1|BIRT|Y|
+--> 2 DATE 18 AUG 1990
+<-- 2|DATE|Y|18 AUG 1990
+--> 1 SEX M
+<-- 1|SEX|Y|M
+--> 1 FAMC F21
+<-- 1|FAMC|Y|F21
+--> 0 I32 INDI
+<-- 0|INDI|Y|I32
+--> 1 NAME Jarrod /Velez/
+<-- 1|NAME|Y|Jarrod /Velez/
+--> 1 BIRT
+<-- 1|BIRT|Y|
+--> 2 DATE 3 JAN 1993
+<-- 2|DATE|Y|3 JAN 1993
+--> 1 SEX M
+<-- 1|SEX|Y|M
+--> 1 FAMC F21
+<-- 1|FAMC|Y|F21
+--> 0 NOTE Daughter as a result of re-marriage
+<-- 0|NOTE|Y|Daughter as a result of re-marriage
+--> 0 I33 INDI
+<-- 0|INDI|Y|I33
+--> 1 NAME Brooke /Greene/
+<-- 1|NAME|Y|Brooke /Greene/
+--> 1 BIRT
+<-- 1|BIRT|Y|
+--> 2 DATE 4 APR 1998
+<-- 2|DATE|Y|4 APR 1998
+--> 1 SEX F
+<-- 1|SEX|Y|F
+--> 1 FAMC F31
+<-- 1|FAMC|Y|F31
+--> 0 NOTE Grandparents family
+<-- 0|NOTE|Y|Grandparents family
+--> 0 F11 FAM
+<-- 0|FAM|Y|F11
+--> 1 MARR
+<-- 1|MARR|Y|
+--> 2 DATE 1 SEP 1968
+<-- 2|DATE|Y|1 SEP 1968
+--> 1 HUSB I11
+<-- 1|HUSB|Y|I11
+--> 1 WIFE I12
+<-- 1|WIFE|Y|I12
+--> 1 CHIL I21
+<-- 1|CHIL|Y|I21
+--> 1 CHIL I22
+<-- 1|CHIL|Y|I22
+--> 1 CHIL I23
+<-- 1|CHIL|Y|I23
+--> 0 NOTE First marriage family
+<-- 0|NOTE|Y|First marriage family
+--> 0 F21 FAM
+<-- 0|FAM|Y|F21
+--> 1 MARR
+<-- 1|MARR|Y|
+--> 2 DATE 25 SEP 1989
+<-- 2|DATE|Y|25 SEP 1989
+--> 1 DIV
+<-- 1|DIV|Y|
+--> 2 DATE 30 OCT 1989
+<-- 2|DATE|Y|30 OCT 1989
+--> 1 HUSB I41
+<-- 1|HUSB|Y|I41
+--> 1 WIFE I21
+<-- 1|WIFE|Y|I21
+--> 1 CHIL I31
+<-- 1|CHIL|Y|I31
+--> 1 CHIL I32
+<-- 1|CHIL|Y|I32
+--> 0 NOTE Second marriage family
+<-- 0|NOTE|Y|Second marriage family
+--> 0 F31 FAM
+<-- 0|FAM|Y|F31
+--> 1 MARR
+<-- 1|MARR|Y|
+--> 2 DATE 18 MAY 1997
+<-- 2|DATE|Y|18 MAY 1997
+--> 1 HUSB I51
+<-- 1|HUSB|Y|I51
+--> 1 WIFE I21
+<-- 1|WIFE|Y|I21
+--> 1 CHIL I33
+<-- 1|CHIL|Y|I33
