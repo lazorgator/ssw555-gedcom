@@ -11,6 +11,10 @@ correct.
 # Usage
 
 ```
+python setup.py install
+```
+
+```
 python ged.py <gedcom_file>
 ```
 
@@ -63,6 +67,14 @@ pip install -r requirements.txt
 That will install the required packages for the project to your virtual
 environment. When you leave the virtual environment, you lose access to the
 packages until you activate the environment again.
+
+## Running tests
+
+While in the root of the project directory:
+
+```
+python -m nose
+```
 
 ## Adding a new required package
 
