@@ -2,6 +2,8 @@ import argparse
 
 import lark
 
+from gedcom.models import Family, Individual
+from gedcom.table import create_family_table, create_individual_table
 from gedcom.transformer import GedcomTransformer
 
 
@@ -19,9 +21,22 @@ def main():
         parsetree = lark_parser.parse(f.read())
         # Build the AST from the parsetree
         tree = GedcomTransformer().transform(parsetree)
+
         # We now have a list of all the individuals, families, and notes
-        print(tree.children)
-        # TODO: Complete the rest
+        # Isolate Family and Individual models into dictionaries
+        families = {m.id: m for m in tree.children if isinstance(m, Family)}
+        individuals = {m.id: m for m in tree.children
+                       if isinstance(m, Individual)}
+
+        # Create and print the individual table
+        individual_table = create_individual_table(individuals)
+        print('Individuals')
+        print(individual_table)
+
+        # Create and print the family table
+        family_table = create_family_table(families, individuals)
+        print('Families')
+        print(family_table)
 
 
 if __name__ == '__main__':
