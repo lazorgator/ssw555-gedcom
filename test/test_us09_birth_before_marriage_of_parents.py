@@ -1,7 +1,7 @@
 from nose.tools import *
 
-from gedcom.birthBeforeMarriageDeath import us09_birth_before_marriage_of_parents
 from gedcom.models import *
+from gedcom.validate import validators
 
 
 def test_birth_before_marriage_false():
@@ -34,7 +34,7 @@ def test_birth_before_marriage_false():
     individuals = [individual1, individual2, individual3]
     families = [family, ]
 
-    result = us09_birth_before_marriage_of_parents(individuals, families)
+    result = validators['validate_birth_before_marriage'](individuals, families)
     assert_equal(True, result)
 
 
@@ -68,7 +68,7 @@ def test_birth_before_marriage_true():
     individuals = [individual1, individual2, individual3]
     families = [family, ]
 
-    result = us09_birth_before_marriage_of_parents(individuals, families)
+    result = validators['validate_birth_before_marriage'](individuals, families)
     assert_equal(False, result)
 
 
@@ -102,7 +102,7 @@ def test_birth_before_parent_death_false():
     individuals = [individual1, individual2, individual3]
     families = [family, ]
 
-    result = us09_birth_before_marriage_of_parents(individuals, families)
+    result = validators['validate_birth_after_parent_dead'](individuals, families)
     assert_equal(True, result)
 
 
@@ -136,5 +136,5 @@ def test_birth_before_parent_death_true():
     individuals = [individual1, individual2, individual3]
     families = [family, ]
 
-    result = us09_birth_before_marriage_of_parents(individuals, families)
+    result = validators['validate_birth_after_parent_dead'](individuals, families)
     assert_equal(False, result)
