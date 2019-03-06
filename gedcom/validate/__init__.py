@@ -12,4 +12,5 @@ def validator(f):
 
 
 for f in os.listdir(os.path.dirname(__file__)):
-    __import__('gedcom.validate.' + f.strip('.py'))
+    if f.endswith('.py'):
+        __import__('gedcom.validate.' + f.strip('.py'))

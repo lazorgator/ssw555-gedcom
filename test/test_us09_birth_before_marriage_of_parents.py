@@ -69,7 +69,7 @@ def test_birth_before_marriage_true():
     families = [family, ]
 
     result = validators['validate_birth_before_marriage'](individuals, families)
-    assert_equal(False, result)
+    assert_equal(True, result)
 
 
 def test_birth_before_parent_death_false():
@@ -116,7 +116,7 @@ def test_birth_before_parent_death_true():
     individual1.spouse_to = [FamilySpouse('11'), ]
 
     individual2 = Individual('12')
-    individual2.birth = Birth(datetime.date(1950, 12, 24))
+    individual2.birth = Birth(datetime.date(1930, 12, 24))
     individual2.name = Name('Alyssia', 'Holcomb')
     individual2.sex = Sex('F')
     individual2.spouse_to = [FamilySpouse('11'), ]
@@ -137,4 +137,4 @@ def test_birth_before_parent_death_true():
     families = [family, ]
 
     result = validators['validate_birth_after_parent_dead'](individuals, families)
-    assert_equal(False, result)
+    assert_equal(True, result)
