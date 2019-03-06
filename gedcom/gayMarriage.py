@@ -8,6 +8,13 @@ def checkIfGay(family,individuals):
 
         if individual1.sex == individual2.sex:
             return True
+
+        if len(family.wives) > 1 and len(family.husbands) == 0 :
+            return True
+
+        if len(family.husbands) > 1 and len(family.wives) == 0 :
+            return True
+
         return False
 
 def createGayTable(families, individuals):
@@ -22,12 +29,12 @@ def createGayTable(families, individuals):
         'Wife Name'
     ]
 
-    
+
     try:
         sorted_families = sorted(families.items(), key=lambda f: f[0])
     except:
         return None
-    
+
     counter = 0
 
     for _, family in sorted_families:
