@@ -5,6 +5,7 @@ import lark
 from gedcom.models import Family, Individual
 from gedcom.table import create_family_table, create_individual_table
 from gedcom.transformer import GedcomTransformer
+from gedcom.validate import validators
 
 
 def main():
@@ -37,6 +38,10 @@ def main():
         family_table = create_family_table(families, individuals)
         print('Families')
         print(family_table)
+
+        print('Validation')
+        for _, func in validators.items():
+            func(individuals.values(), families.values())
 
 
 if __name__ == '__main__':
