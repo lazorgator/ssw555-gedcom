@@ -6,9 +6,9 @@ TAGS = {
     0: ['INDI', 'FAM', 'HEAD', 'TRLR', 'NOTE'],
     1: ['NAME', 'SEX', 'BIRT', 'DEAT', 'FAMC', 'FAMS', 'MARR',
         'HUSB', 'WIFE', 'CHIL', 'DIV'],
-    2: ['DATE',]
+    2: ['DATE', ]
 }
-EXPR_REGEX = re.compile(r'^(?P<level>\d+) (?P<tag>\w+)(\s(?P<args>.+))*$');
+EXPR_REGEX = re.compile(r'^(?P<level>\d+) (?P<tag>\w+)(\s(?P<args>.+))*$')
 
 
 def validate(line):

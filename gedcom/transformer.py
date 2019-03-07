@@ -6,7 +6,7 @@ from .models import *
 
 
 _MONTH_MAP = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP',
-             'OCT', 'NOV', 'DEC']
+              'OCT', 'NOV', 'DEC']
 
 
 class GedcomTransformer(lark.Transformer):
@@ -68,4 +68,4 @@ class GedcomTransformer(lark.Transformer):
 
     def note_stmt(self, tokens):
         (_, note) = tokens
-        return  Note(note.value)
+        return Note(note.value)

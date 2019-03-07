@@ -34,7 +34,8 @@ def test_birth_before_marriage_false():
     individuals = [individual1, individual2, individual3]
     families = [family, ]
 
-    result = validators['validate_birth_before_marriage'](individuals, families)
+    result = validators['validate_birth_before_marriage'](
+        individuals, families)
     assert_equal(True, result)
 
 
@@ -68,7 +69,8 @@ def test_birth_before_marriage_true():
     individuals = [individual1, individual2, individual3]
     families = [family, ]
 
-    result = validators['validate_birth_before_marriage'](individuals, families)
+    result = validators['validate_birth_before_marriage'](
+        individuals, families)
     assert_equal(True, result)
 
 
@@ -102,7 +104,8 @@ def test_birth_before_parent_death_false():
     individuals = [individual1, individual2, individual3]
     families = [family, ]
 
-    result = validators['validate_birth_after_parent_dead'](individuals, families)
+    result = validators['validate_birth_after_parent_dead'](
+        individuals, families)
     assert_equal(True, result)
 
 
@@ -136,5 +139,6 @@ def test_birth_before_parent_death_true():
     individuals = [individual1, individual2, individual3]
     families = [family, ]
 
-    result = validators['validate_birth_after_parent_dead'](individuals, families)
+    result = validators['validate_birth_after_parent_dead'](
+        individuals, families)
     assert_equal(True, result)

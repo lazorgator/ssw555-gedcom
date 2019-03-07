@@ -64,7 +64,7 @@ def test_table():
         'Wife ID',
         'Wife Name',
         'Children',
-    ]
+        ]
     manual_family_table.add_row([
         '11',
         '1968-09-01',
@@ -73,8 +73,8 @@ def test_table():
         'Leandro /Ritter/',
         '12',
         'Alyssia /Holcomb/',
-        ['21',]
-    ])
+        ['21', ]
+        ])
 
     manual_individual_table = PrettyTable()
     manual_individual_table.field_names = [
@@ -87,7 +87,7 @@ def test_table():
         'Death',
         'Child',
         'Spouse',
-    ]
+        ]
     manual_individual_table.add_row([
         '11',
         'Leandro /Ritter/',
@@ -97,8 +97,8 @@ def test_table():
         False,
         '1995-03-26',
         [],
-        ['11',]
-    ])
+        ['11', ]
+        ])
     manual_individual_table.add_row([
         '12',
         'Alyssia /Holcomb/',
@@ -108,8 +108,8 @@ def test_table():
         True,
         None,
         [],
-        ['11',]
-    ])
+        ['11', ]
+        ])
     manual_individual_table.add_row([
         '21',
         'Anita /Ritter/',
@@ -118,9 +118,9 @@ def test_table():
         '58',
         True,
         None,
-        ['11',],
+        ['11', ],
         []
-    ])
+        ])
 
     # They should be equal
     assert_equals(str(manual_family_table), str(family_table))

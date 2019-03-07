@@ -51,26 +51,26 @@ def test_parser():
     individual1.death = Death(datetime.date(1995, 3, 26))
     individual1.name = Name('Leandro', 'Ritter')
     individual1.sex = Sex('M')
-    individual1.spouse_to = [FamilySpouse('11'),]
+    individual1.spouse_to = [FamilySpouse('11'), ]
 
     individual2 = Individual('12')
     individual2.birth = Birth(datetime.date(1950, 12, 24))
     individual2.name = Name('Alyssia', 'Holcomb')
     individual2.sex = Sex('F')
-    individual2.spouse_to = [FamilySpouse('11'),]
+    individual2.spouse_to = [FamilySpouse('11'), ]
 
     individual3 = Individual('21')
     individual3.birth = Birth(datetime.date(1960, 5, 13))
     individual3.name = Name('Anita', 'Ritter')
     individual3.sex = Sex('F')
-    individual3.child_to = [FamilyChild('11'),]
+    individual3.child_to = [FamilyChild('11'), ]
 
     # Create a Family using models only
     family = Family('11')
-    family.marriages = [Marriage(datetime.date(1968, 9, 1)),]
-    family.husbands = [Husband('11'),]
-    family.wives = [Wife('12'),]
-    family.children = [Child('21'),]
+    family.marriages = [Marriage(datetime.date(1968, 9, 1)), ]
+    family.husbands = [Husband('11'), ]
+    family.wives = [Wife('12'), ]
+    family.children = [Child('21'), ]
 
     # Put them into a list in order
     expected_output = [
@@ -79,7 +79,7 @@ def test_parser():
         individual2,
         individual3,
         family
-    ]
+        ]
 
     # Parse the TEST_GEDCOM to get the AST
     parsetree = (lark.Lark.open('gedcom/gedcom.lark', parser='earley')
