@@ -11,12 +11,12 @@ from prettytable import PrettyTable
 
 from gedcom.models import *
 from gedcom.transformer import GedcomTransformer
-from gedcom.gayMarriage import checkIfGay, createGayTable
+from gedcom.validate.gayMarriage import checkIfGay, createGayTable
 
 import unittest
 
 # test GEDCOM of a gay couple
-TEST_GEDCOM_1 = """ 
+TEST_GEDCOM_1 = """
 0 NOTE Test Note
 0 I11 INDI
 1 NAME Sarah /Ritter/
@@ -101,14 +101,14 @@ class TestGayMarriage(unittest.TestCase):
             'Wife ID',
             'Wife Name'
         ]
-        
+
         sorted_families = sorted(families.items(), key=lambda f: f[0])
 
         for _, family in sorted_families:
             fam = family
-        
+
         self.assertTrue(checkIfGay(fam, individuals))
-    
+
 
     def testReturnFalseOnStraightCouple(self):
         # Parse the TEST_GEDCOM_2
@@ -131,14 +131,14 @@ class TestGayMarriage(unittest.TestCase):
             'Wife ID',
             'Wife Name'
         ]
-        
+
         sorted_families = sorted(families.items(), key=lambda f: f[0])
 
         for _, family in sorted_families:
             fam = family
-        
+
         self.assertFalse(checkIfGay(fam, individuals))
-    
+
 
     def testCreateTable(self):
         # Parse the TEST_GEDCOM_1
@@ -150,11 +150,11 @@ class TestGayMarriage(unittest.TestCase):
 
         individuals = {m.id: m for m in tree.children
                     if isinstance(m, Individual)}
-        
+
         table = createGayTable(families, individuals)
 
         self.assertIsNotNone(table)
-    
+
     def testTableIsNoneWhenNoGayCoupleFound(self):
         # Parse the TEST_GEDCOM_2
         parsetree = (lark.Lark.open('gedcom/gedcom.lark', parser='earley')
@@ -165,7 +165,7 @@ class TestGayMarriage(unittest.TestCase):
 
         individuals = {m.id: m for m in tree.children
                     if isinstance(m, Individual)}
-        
+
         table = createGayTable(families, individuals)
 
         self.assertIsNone(table)
@@ -178,5 +178,3 @@ class TestGayMarriage(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-    

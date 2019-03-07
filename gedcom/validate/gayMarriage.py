@@ -2,6 +2,10 @@ import datetime
 
 from prettytable import PrettyTable
 
+from gedcom.validate import validator
+
+
+@validator
 def checkIfGay(family,individuals):
         individual1 = individuals[family.husbands[0].individual_id]
         individual2 = individuals[family.wives[0].individual_id]
@@ -17,6 +21,8 @@ def checkIfGay(family,individuals):
 
         return False
 
+
+@validator
 def createGayTable(families, individuals):
     table = PrettyTable()
     table.field_names = [
