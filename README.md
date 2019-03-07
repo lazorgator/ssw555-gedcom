@@ -11,17 +11,17 @@ correct.
 # Usage
 
 ```
-pip install - r requirements.txt
+pip install -r requirements.txt
 ```
 
 ```
-python ged.py < gedcom_file >
+python ged.py <gedcom_file>
 ```
 
 Output to a file:
 
 ```
-python ged.py < gedcom_file > -o < output_file >
+python ged.py <gedcom_file> -o <output_file>
 ```
 
 Additional usage information:
@@ -40,7 +40,7 @@ executable defaults to Python 3.
 After cloning, navigate to the project directory.
 
 ```
-python - m venv .venv
+python -m venv .venv
 ```
 
 This creates a virtual environment so you don't install dependencies to your
@@ -49,7 +49,7 @@ system directories. This keeps your system clean while you work on the project.
 (Linux and MacOS)
 
 ```
-source .venv / bin / activate
+source .venv/bin/activate
 ```
 
 (Windows) In the command prompt or Powershell:
@@ -61,7 +61,7 @@ source .venv / bin / activate
 While inside the virtual environment:
 
 ```
-pip install - r requirements.txt
+pip install -r requirements.txt
 ```
 
 That will install the required packages for the project to your virtual
@@ -73,7 +73,7 @@ packages until you activate the environment again.
 While in the root of the project directory:
 
 ```
-python - m nose
+python -m nose
 ```
 
 # Adding a new required package
