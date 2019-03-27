@@ -12,7 +12,7 @@ def validate_incest(individuals, families):
             husband_ind = [i for i in individuals
                            if i.id == husband.individual_id]
             wife_ind = [i for i in individuals if i.id == wife.individual_id]
-            if husband_ind and wife_ind and husband_ind[0].child_to in wife_ind[0].child_to and len(husband_ind[0].child_to) > 0 and len(wife_ind[0].child_to) > 0:
+            if husband_ind and wife_ind and any(x in husband_ind[0].child_to for x in wife_ind[0].child_to) and len(husband_ind[0].child_to) > 0 and len(wife_ind[0].child_to) > 0:
                 print(
                     'Individuals {} and {} are incestual (ew).'
                     .format(husband.individual_id, wife.individual_id))
