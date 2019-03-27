@@ -75,6 +75,9 @@ While in the root of the project directory:
 ```
 python -m nose
 ```
+# Single unit test
+
+nosetests test_usXX.py
 
 # Adding a new required package
 
