@@ -77,7 +77,9 @@ python -m nose
 ```
 # Single unit test
 
+```
 nosetests test_usXX.py
+```
 
 # Adding a new required package
 
