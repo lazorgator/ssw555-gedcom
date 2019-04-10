@@ -12,4 +12,4 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 def test_cousin_marriage():
 
-    assert True;
+    assert True
