@@ -4,7 +4,7 @@ from gedcom.validate import validator
 
 @validator
 def validate_birth_after_divorce(individuals, families):
-    """ US09 - Birth should occur after the marriage of parents """
+    """ US09 - Birth should occur before the parents divorce """
     for individual in individuals:
         if individual.child_to:
             for family in families:
