@@ -1,6 +1,7 @@
 # Vaishnavi Gopalakrishnan
 
 
+@validator
 def no_bigamy(individuals, families):
     """ US12 - Marriage should not occur during marriage to another spouse """
     # for each fams check for divorce or death prior to next fam
