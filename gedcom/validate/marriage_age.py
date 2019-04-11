@@ -15,19 +15,20 @@ def marriage_age(individuals, families):
         husband = None
         wife = None
         for individual in individuals:
-            if individual.uid == family.husband:
+            if individual.id == family.husbands[0].individual_id:
                 husband = individual
-            if individual.uid == family.wife:
+            if individual.id == family.wives[0].individual_id:
                 wife = individual
             # We have found both the husband and wife individuals
             if husband is not None and wife is not None:
                 break
 
-        if husband.birthdate > min_birt:
+        if husband.birth.date > min_birt.date():
             print("Husband is married before 14 years old")
             return_flag = False
 
-        if wife.birthdate > min_birt:
+        if wife.birth.date > min_birt.date():
             print("Wife is married before 14 years old")
             return_flag = False
     return return_flag
+
