@@ -2,6 +2,7 @@
 from datetime import datetime
 
 
+@validator
 def marriage_age(individuals, families):
     """ US11 - Marriage should be atleast 14 years after the birth of both spouses """
 
