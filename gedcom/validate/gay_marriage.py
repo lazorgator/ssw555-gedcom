@@ -1,7 +1,3 @@
-import datetime
-
-from prettytable import PrettyTable
-
 from gedcom.validate import validator
 
 
