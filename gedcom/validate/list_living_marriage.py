@@ -1,3 +1,8 @@
+#Vaishnavi Gopalakrishnan
+from gedcom.validate import validator
+
+
+@validator
 def list_living_married(individuals, families):
     """ US15 - List the living married people """
     living = []
