@@ -8,4 +8,5 @@ from gedcom.validate.cheater import validate_check_for_cheaters
 
 def test_cheater():
 
+
     assert_true(True)
