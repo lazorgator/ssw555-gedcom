@@ -52,7 +52,5 @@ def test_list_deceased():
     families = [f for f in tree.children if isinstance(f, Family)]
     individuals = [i for i in tree.children if isinstance(i, Individual)]
 
-    # assert_equals(true, list_deceased(individuals, families))
-
     assert_equals(families.sort(), individuals.sort())
 
