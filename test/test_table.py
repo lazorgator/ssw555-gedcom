@@ -93,7 +93,7 @@ def test_table():
         'Leandro /Ritter/',
         'M',
         '1945-04-23',
-        '73',
+        '74',
         False,
         '1995-03-26',
         [],
